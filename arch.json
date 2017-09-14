@@ -1,0 +1,19 @@
+{
+  "plugins": {
+    "blacklist": [
+      "pluginName"
+    ]
+  },
+  "archServices": [
+    "mongo"
+  ],
+  "archPlugins": [
+    "mongoose"
+  ],
+  "standards": {
+    "env": [
+      "development",
+      "test"
+    ]
+  }
+}
