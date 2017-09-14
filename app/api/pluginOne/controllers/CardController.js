@@ -13,14 +13,23 @@ module.exports = function (server, options, services) {
           reply(err);
         });
     },
-    find: function (request, reply) {
-      CardService.find(request.params.id)
+    findById: function (request, reply) {
+      CardService.findById(request.params.id)
         .then((res) => {
           reply(res);
         })
         .catch((err) => {
           reply(err);
         });
+    },
+    find: function (request, reply){
+      CardService.find()
+        .then((res) => {
+          reply(res);
+        })
+        .catch((err) => {
+          reply(err);
+        })
     }
 
 

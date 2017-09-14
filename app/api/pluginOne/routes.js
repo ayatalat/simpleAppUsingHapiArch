@@ -20,8 +20,16 @@ module.exports = function (server, options, controllers) {
       method: 'GET',
       path: '/pluginOne/card/{id}',
       config: {
-        handler: CardController.find,
+        handler: CardController.findById,
         description: 'list card by id'
+      }
+    },
+    {
+      method: 'GET',
+      path: '/pluginOne/cards',
+      config: {
+        handler: CardController.find,
+        description: 'list cards'
       }
     }
   ];

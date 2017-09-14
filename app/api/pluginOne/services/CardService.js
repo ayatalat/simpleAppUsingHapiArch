@@ -8,8 +8,11 @@ module.exports = function (server, options, components) {
     create: function (data) {
       return Card.create(data);
     },
-    find: function (data){
-      return Card.find(data);
+    findById: function (data){
+      return Card.findById(data);
+    },
+    find: function (){
+      return Card.find();
     }
 
   };
