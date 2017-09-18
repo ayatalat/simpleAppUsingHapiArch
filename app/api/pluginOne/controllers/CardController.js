@@ -29,7 +29,7 @@ module.exports = function (server, options, services) {
         })
         .catch((err) => {
           reply(err);
-        })
+        });
     }
 
 
